@@ -1,0 +1,45 @@
+/* ============================================= */
+/* Navigation */
+/* ============================================= */
+
+// nav {
+//   //display: flex;
+//   //justify-content: space-around;
+//   list-style-type: none;
+//   background-color: #233f75;
+//   text-align: center;
+// }
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $dashboard-color;
+  width: 100%;
+}
+nav img {
+  width: 30px;
+  height: 45px;
+  margin: auto;
+  filter: invert(1);
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+ul {
+  display: flex;
+  font-size: 1.22em;
+  list-style-type: none;
+}
+
+.traffic-nav-link:hover {
+  color: $white;
+  background-color: $hover-color;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.traffic-nav {
+  border-radius: 5px;
+  padding: 10px 0;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}

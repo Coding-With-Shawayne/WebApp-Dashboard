@@ -6,16 +6,26 @@
 
 $white: #fff;
 $grey: #898f9c;
-$greyy: #898f9c;
+$black: #000;
+$lime-green: #90ee90;
+$navy-blue: #4267b2;
+$purple: #7445e2;
 
 // Functional Color Variable
 
-$send-btn-color: #4267b2;
-$save-btn-color: #4267b2;
-$cancel-btn-color: #898f9c;
+$send-btn-color: $navy-blue;
+$save-btn-color: $navy-blue;
+$cancel-btn-color: $grey;
 
-$hover-color: limegreen;
+$hover-color: $lime-green;
+$notication-color: $lime-green;
 
+$header-bg-color: $navy-blue;
 $color-text: #000000;
+$alert-bg-color: lighten($header-bg-color, 8%);
+$dashboard-color: darken($navy-blue, 15%);
+$social-text-color: lighten($alert-bg-color, 5%);
+$social-bg: #ecf0f7;
+$social-views-color: lighten($black, 50%);
 
 $svg-width: 40;

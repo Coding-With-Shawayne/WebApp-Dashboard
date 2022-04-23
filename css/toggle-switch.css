@@ -268,7 +268,7 @@
   /* iOS Theme
 */
   .switch-ios.switch-light span span {
-    color: #888b92; }
+    color: #8e8adb; }
   .switch-ios.switch-light a {
     left: 0;
     top: 0;
@@ -301,11 +301,12 @@
       padding-right: 1.875em; }
   .switch-ios.switch-light input:checked ~ span a {
     left: 100%;
-    border-color: #4BD865;
+    border-color: #d3d3d340;
     margin-left: -2em; }
   .switch-ios.switch-light input:checked ~ span {
     border-color: #4BD865;
-    box-shadow: inset 0 0 0 30px #4BD865; }
+    /* box-shadow: inset 0 0 0 30px #4BD865; } */
+  }
   .switch-ios.switch-light input:checked ~ span span:first-of-type {
     opacity: 0; }
   .switch-ios.switch-light input:checked ~ span span:last-of-type {

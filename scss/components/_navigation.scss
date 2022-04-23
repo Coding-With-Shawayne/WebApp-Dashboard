@@ -2,20 +2,27 @@
 /* Navigation */
 /* ============================================= */
 
-// nav {
-//   //display: flex;
-//   //justify-content: space-around;
-//   list-style-type: none;
-//   background-color: #233f75;
+// .nav {
+//   grid-area: nav;
+//   display: flex;
 //   text-align: center;
+//   justify-content: space-evenly;
+//   padding: 1rem;
+//   background-color: #00000024;
 // }
 
+.nav {
+  padding: 0.375rem;
+}
+
 nav {
+  grid-area: nav;
   display: flex;
   justify-content: space-evenly;
   background-color: $dashboard-color;
   width: 100%;
 }
+
 nav img {
   width: 30px;
   height: 45px;
@@ -27,19 +34,28 @@ nav img {
 
 ul {
   display: flex;
+  justify-content: space-between;
   font-size: 1.22em;
   list-style-type: none;
+  // margin-bottom: 1rem;
 }
 
-.traffic-nav-link:hover {
-  color: $white;
-  background-color: $hover-color;
-  border-radius: 5px;
-  padding: 7px;
-}
+// .traffic-nav-link:hover {
+//   color: $white;
+//   background-color: $hover-color;
+//   border-radius: 5px;
+//   padding: 7px;
+// }
 
 .traffic-nav {
   border-radius: 5px;
   padding: 10px 0;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+
+// .traffic-nav {
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-evenly;
+//   margin-left: -50px;
+// }

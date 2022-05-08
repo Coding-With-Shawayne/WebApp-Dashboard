@@ -37,12 +37,10 @@ header {
 }
 
 .header-image {
-  // max-width: 3.5rem;
   align-self: center;
   border-radius: 50%;
   border: 1px solid $white;
   margin-left: 10px;
-  // margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
@@ -51,53 +49,21 @@ header {
 }
 
 .bell-icon {
-  // margin-left: auto;
-  margin-left: 16px;
+  margin-left: 8px;
 }
 
-// .bell-icon svg {
-//   // align-items: center;
-//   // text-align: center;
-//   margin: 0 auto;
-//   padding: 0 auto;
-// }
-
-// .v-line-header {
-//   border-left: 1px solid $white;
-//   height: 40px;
-//   margin-right: -20px;
-// }
-
-// #bell-icon {
-//   // position: relative;
-//   // margin-right: 10px;
-//   // top: 5px;
-//   align-items: center;
-//   margin-right: 25px;
-// }
-
-ul, .traffic, 
+ul,
+.traffic,
 .full-container .widget-container-half h3,
 .full-container .daily h3,
-.daily,
-.social-container h3{
+.daily {
   margin-bottom: 2rem;
 }
 
-
 .traffic,
 .mobile,
-.social-container,
-.full-container,
-.members,
-.activity,
-.message
- {
-    margin: 0 1rem;
-}
-
-.settings {
-  margin: 1rem;
+.full-container {
+  margin: 0 1rem;
 }
 
 #notifications {
@@ -112,10 +78,11 @@ ul, .traffic,
 }
 
 h3 {
-  margin: 10px 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  font-weight: lighter;
+  margin: 1rem 1rem;
+}
+
+#message {
+  margin: 0 1rem;
 }
 
 .alert-banner {
@@ -142,44 +109,28 @@ p {
   display: inline-block;
 }
 
-// .social-container {
-//   border: 1px solid $grey;
-//   border-radius: 3%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 15px 40px;
-//   background-color: $social-bg;
-//   width: 80%;
-//   box-shadow: 2px;
-//   margin: 10px auto;
-// }
-
-    
 .facebook,
 .instagram,
 .twitter {
-    display: flex;
-    margin: 1rem;
-    padding: 0.625rem 1rem;
-    border-radius: 10px;
-    border: 1px solid $grey;
-    background-color: $social-bg-color;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  margin: 1rem;
+  padding: 0.625rem 1rem;
+  border-radius: 10px;
+  border: 1px solid $grey;
+  background-color: $social-bg-color;
+  align-items: center;
+  text-align: center;
 }
 
-.social-text {
-  font-size: 1rem;
-  margin: 0 .3em;
+.social-text p:first-child {
+  font-size: 20px;
 }
 
-// .social-text p:nth-child(2) {
-//   font-size: 50px;
-//   margin: 0.3em 0;
-//   margin-top: 0;
-// }
-    
+.social-text p:nth-child(2) {
+  font-size: 40px;
+  margin: 0.3em 0;
+  margin-top: 0;
+}
 
 .social-name {
   color: $social-text-color;
@@ -196,38 +147,8 @@ p {
   fill: $header-bg-color;
 }
 
-// .social-image-circle {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 70px;
-//   height: 70px;
-//   border-radius: 50%;
-//   // background-color: $dashboard-color;
-//   margin-left: 15px;
-// }
-
-.social-text .social-views {
-  font-size: 3.4em;
-}
-
-// .social-stat {
-//   border-top: 1px solid $grey;
-//   margin-top: 20px;
-//   width: 80%;
-// }
-
-// .members,
-// .activity,
-// .message{
-//   margin: 1rem;
-// }
-
-// .settings {
-//   margin: initial;
-// }
-
-.members-container, .activity-container {
+.members-container,
+.activity-container {
   text-align: center;
   padding: 1rem;
 }
@@ -247,7 +168,6 @@ a {
 
 .dashboard-header {
   display: flex;
-  justify-content: space-between;
 }
 
 .dashboard {
@@ -257,38 +177,26 @@ a {
 
 .tab {
   width: 90%;
-  background-color: $social-bg-color;;
+  background-color: $social-bg-color;
   height: 45px;
-  // margin-left: auto;
   border-left: 1px solid $grey;
   border-bottom: 1px solid $grey;
 }
 
-// .widget-container {
-//   display: flex;
-//   flex-direction: column;
-// }
+.settings-container {
+  margin: 1rem 1rem;
+}
 
-// .form-field {
-//   margin: 1rem 0;
-//   height: 8vh;
-//   border-radius: 10px;
-//   border-color: gray;
-//   width: 100%;
-//   background-color: #d3d3d340;
-// }
+.toggle-switch {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 90%;
+}
 
-// .form-area {
-//   margin: 1rem 0;
-//   height: 30vh;
-//   border-radius: 10px;
-//   border: solid 2px gray;
-//   background-color: #d3d3d340;
-// }
-
-// .widget-container, .settings-container, .settings-button {
-//   width: 90%;
-// }
+.switch-2 {
+  margin-top: 1rem;
+}
 
 .form-field {
   margin: 1rem 0;
@@ -318,65 +226,11 @@ a {
   font-size: 1.1rem;
 }
 
-.widget-container button{
+.widget-container button {
   width: 100%;
   margin: 10px 0;
   padding: 8px;
 }
-
-// .message {
-//   padding-bottom: 8px;
-// }
-
-// .message h3, .activity h3, .settings h3{
-//   margin-left: 15px;
-// }
-
-// Start button
-
-.button-primary{
-  background-color: $send-btn-color;
-  color: $white;
-  border: none;
-  height: 50px;
-  border-radius: 4px;
-  font-size: 1.1rem;
-}
-
-.button-save, .button-cancel {
-  background-color: $send-btn-color;
-  color: $white;
-  height: 50px;
-  border: 1px solid $grey;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-.button-cancel {
-  background-color: $grey;
-}
-
-// .button-disabled {
-//   background-color: $cancel-btn-color;
-//   color: $white;
-//   border: none;
-//   height: 50px;
-//   border-radius: 4px;
-//   padding: 10px;
-//   width: 40%;
-//   font-size: 1.1rem;
-//   // margin-left: 40px;
-// }
-
-.settings-button {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-// #save {
-//   width: 40%;
-// }
 
 .profile-toggle {
   margin-left: 30px;
@@ -386,52 +240,22 @@ a {
   font-size: 0.9rem;
 }
 
-// #traffic-chart,
-// #daily-chart,
-// #mobile-chart {
-//     margin: 2.5rem 0;
-// }
-
 .settings a {
   background-color: $alert-bg-color;
   color: $white;
 }
 
 #timezone {
-  // width: 80%;
   align-items: center;
-  margin-top: 2.5rem;
+  margin-bottom: 2rem;
 }
-
-// Toggle Switch
-
-.switch-ios.switch-light {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 100%;
-  align-items: center;
-  // margin: 10px 0;
-}
-
-.switch-ios.switch-light span {
-  flex-basis: 100px;
-}
-
-.switch-ios.switch-light strong {
-  flex-basis: 200px;
-}
-
-.switch-ios.switch-light input:checked ~ span {
-  border-color: #d3d3d340;
-  box-shadow: inset 0 0 0 30px #8e8adb;
-}
-
-.switch-ios.switch-light input:checked ~ span a {
-  border-color: #d3d3d340;
-}
-// End Toggle Switch
 
 hr {
   border: 1px solid $grey;
   width: 100%;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
